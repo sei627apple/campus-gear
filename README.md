@@ -1,6 +1,6 @@
 # キャンパスギア
 
-大学生のPC・ガジェット・デザインのブログ　https://sei627appple.github.io/campus-gear/
+大学生のPC・ガジェット・デザインのブログ　https://sei627apple.github.io/campus-gear/
 
 ## フォルダの中身
 
