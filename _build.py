@@ -2,7 +2,7 @@
 # 使い方: このフォルダで「python3 _build.py」を実行すると、
 # _src/ の記事から posts/・index.html・about.html・sitemap.xml を作り直します。
 import json, re, glob, math, html as H
-BASE = "https://sei627appple.github.io/campus-gear/"
+BASE = "https://sei627apple.github.io/campus-gear/"
 SITE = "キャンパスギア"
 GEAR = "M23.23 13.65 L25.96 13.81 L25.96 18.19 L23.23 18.35 L22.77 19.45 L24.59 21.50 L21.50 24.59 L19.45 22.77 L18.35 23.23 L18.19 25.96 L13.81 25.96 L13.65 23.23 L12.55 22.77 L10.50 24.59 L7.41 21.50 L9.23 19.45 L8.77 18.35 L6.04 18.19 L6.04 13.81 L8.77 13.65 L9.23 12.55 L7.41 10.50 L10.50 7.41 L12.55 9.23 L13.65 8.77 L13.81 6.04 L18.19 6.04 L18.35 8.77 L19.45 9.23 L21.50 7.41 L24.59 10.50 L22.77 12.55 Z M20.20 16 A4.2 4.2 0 1 0 11.80 16 A4.2 4.2 0 1 0 20.20 16 Z"
 LOGO = f'<svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#161616"/><path fill="#fff" fill-rule="evenodd" d="{GEAR}"/><circle cx="16" cy="16" r="2.2" fill="#f5c400"/></svg>'
