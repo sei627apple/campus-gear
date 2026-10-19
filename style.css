@@ -115,6 +115,15 @@ table { border-collapse: collapse; width: 100%; font-size: 14px; line-height: 1.
 th, td { border-bottom: 1px solid var(--line); padding: 10px 12px 10px 0; text-align: left; vertical-align: top; }
 th { font-weight: 700; border-bottom: 2px solid var(--ink); white-space: nowrap; }
 .small { font-size: 13px; color: var(--sub); }
+.compare { margin: 28px 0 36px; }
+.compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.compare-item { margin: 0; }
+.compare-label { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; line-height: 1; padding: 6px 10px; border-radius: 999px; margin-bottom: 8px; }
+.compare-label.before { background: var(--soft); color: var(--sub); }
+.compare-label.after { background: var(--ink); color: #fff; }
+.compare svg { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
+.compare-item figcaption { font-size: 13px; color: var(--sub); line-height: 1.8; margin-top: 8px; }
+.compare > figcaption { font-size: 13px; color: var(--faint); margin-top: 12px; }
 
 .pager { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 56px 0 0; }
 .pager a { display: block; border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; text-decoration: none; font-size: 14px; line-height: 1.6; transition: border-color .15s; }
@@ -157,6 +166,7 @@ th { font-weight: 700; border-bottom: 2px solid var(--ink); white-space: nowrap;
   .body h2 { font-size: 19px; margin-top: 44px; }
   .pager { grid-template-columns: 1fr; }
   .pager .next { grid-column: 1; }
+  .compare-grid { grid-template-columns: 1fr; gap: 24px; }
 }
 @media (max-width: 600px) { .nav-home { display: none; } }
 .site-footer .brand { color: var(--text); text-decoration: none; }
