@@ -142,6 +142,8 @@ q.addEventListener('input',apply); apply();
 </script>
 '''
 idx=head(f"{SITE}｜大学生のPC・ガジェット・デザインのメモ", "PCやガジェット、デザインが好きな大学生が、パソコン選びや便利な使い方、デザインのことを書いているブログです。", BASE, SITE, 'website', '', 'home')
+# Googleの検索結果にサイト名を正しく出すための構造化データ（トップページのみ）
+idx=idx.replace('</head>', '<script type="application/ld+json">'+json.dumps({"@context":"https://schema.org","@type":"WebSite","name":SITE,"alternateName":"CAMPUS GEAR","url":BASE},ensure_ascii=False)+'</script>\n</head>',1)
 idx+=f'''
 <main id="main">
 <div class="wrap">
